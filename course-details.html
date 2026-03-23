@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - LearnTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styling for the details layout */
+        .content-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .curriculum-list {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .curriculum-list li {
+            margin-bottom: 10px;
+        }
+        .enroll-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><h2>LearnTech</h2></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register / Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="content-box">
+            <h2>HTML & CSS Masterclass</h2>
+            <br>
+            <p><strong>Instructor:</strong> Jane Doe (Senior Frontend Developer)</p>
+            <p><strong>Duration:</strong> 6 Weeks (Self-paced)</p>
+            
+            <div class="enroll-section">
+                <div>
+                    <h3 style="color: #2c3e50;">$49.99</h3>
+                    <p>Includes lifetime access and certificate of completion.</p>
+                </div>
+                <button class="btn" onclick="alert('Redirecting to checkout page...')">Enroll Now</button>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h3>Course Description</h3>
+            <p>This comprehensive masterclass takes you from a complete beginner to building responsive, beautiful websites from scratch. Learn the foundations of the web, modern CSS layouts (Flexbox and Grid), and best practices for web accessibility and performance.</p>
+            <br>
+            <h3>Course Curriculum</h3>
+            <ul class="curriculum-list">
+                <li><strong>Week 1:</strong> Introduction to Web Development & HTML Basics</li>
+                <li><strong>Week 2:</strong> CSS Fundamentals and Styling Text</li>
+                <li><strong>Week 3:</strong> The Box Model and Positioning</li>
+                <li><strong>Week 4:</strong> Responsive Design with CSS Flexbox</li>
+                <li><strong>Week 5:</strong> Advanced Layouts with CSS Grid</li>
+                <li><strong>Week 6:</strong> Final Project, Hosting, & Deployment</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

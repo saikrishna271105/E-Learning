@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LearnTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><h2>LearnTech</h2></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="register.html">Register / Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" style="max-width: 500px; margin-top: 50px;">
+        <h2 style="text-align: center;">Create an Account</h2>
+        <br>
+        <form id="registerForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Register</button>
+            <p id="error-message" style="color: red; margin-top: 10px; text-align: center;"></p>
+        </form>
+
+        <p style="text-align: center; margin-top: 20px;">
+            Already have an account? <a href="login.html" style="color: #3498db; text-decoration: none; font-weight: 600;">Login here</a>.
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (password.length < 6) {
+                errorMessage.style.color = "red";
+                errorMessage.textContent = "Password must be at least 6 characters long.";
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                errorMessage.style.color = "red";
+                errorMessage.textContent = "Passwords do not match!";
+                return;
+            }
+
+            errorMessage.style.color = "green";
+            errorMessage.textContent = "Registration successful! Welcome, " + name + ".";
+        });
+    </script>
+</body>
+</html>

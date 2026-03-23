@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="courses.xsd">
+    <course>
+        <title>HTML &amp; CSS Masterclass</title>
+        <image>images/html-css.jpg</image>
+        <instructor>Jane Doe</instructor>
+        <price>49.99</price>
+        <rating>4.9</rating>
+    </course>
+    <course>
+        <title>Advanced JavaScript</title>
+        <image>images/javascript.jpg</image>
+        <instructor>John Smith</instructor>
+        <price>59.99</price>
+        <rating>4.7</rating>
+    </course>
+    <course>
+        <title>Intro to Artificial Intelligence</title>
+        <image>images/ai-course.jpg</image>
+        <instructor>Dr. Alan Turing</instructor>
+        <price>79.99</price>
+        <rating>4.8</rating>
+    </course>
+    <course>
+        <title>Computer Graphics Fundamentals</title>
+        <image>images/graphics.jpg</image>
+        <instructor>Sarah Connor</instructor>
+        <price>65.00</price>
+        <rating>5.0</rating>
+    </course>
+</courses>
